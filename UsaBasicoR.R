@@ -1,0 +1,113 @@
+#Created on Fri Feb 05 09:19:20 2021
+#author: Angel Moreno
+
+#Este script es para mostrarles el uso b+asico de algunas sentecias de R
+#Siempre que empieze una línea con el simnbolo de gato (#), esa línea sera un comentario
+
+#La asignación (empleremos los carecteres "<-" para asignación) de valores a
+#variables en R y la consulta de ellas se realiza de la siguiente forma:
+
+x <- 3 #Preciona [Ctrl] + [Enter] para ejectuar esta línea en la consola
+x      #[Ctrl] + [Enter]
+
+#Otras formas de asignación, preciona [Ctrl] + [Enter] en cada línea
+x = 4
+x
+10 -> x
+x
+
+#Para imprimir con algún comentario usamos la función print()
+print("Hola mundo!")
+
+#Para unir texto y variables usamos la función paste() dentro del print()
+print(paste("Este es valor de x =", x)) #El separador por default es el espacio " "
+
+#La creación de un vector en R y la consulta de ello se realiza de la siguiente forma:
+datos <- c(4, 2, 4, 5)
+n <- length(datos) #La función length() nos la longitud de los datos
+datos
+n
+min(datos) #Mínimo
+max(datos) #Máximo
+sum(datos) #Suma
+ord <- sort(datos) #Ordenamos los datos
+ord
+ord[1] #El primero elemento del vector ord
+ord[n] #El ultimo elemento del vector ord
+
+#Otras rutinas útiles para analizar vectores son las siguientes:
+
+data <- c(1, 4, 2, 4, 2, 5, 6, 7, 4, 76, 3, 2, 5, 6, 7)
+mean(data) #Media
+median(data) #Mediana
+summary(data) #Resumen de las variables
+table(data) #Crea una tabla de frecuencias
+var(data) #Varianza
+sd(data) #Desviación estandar
+otra <- c(1, 5, 3, 5, 3, 65, 4, 6, 3, 6, 3, 56, 4)
+length(otra)
+length(data)
+otra <- c(otra, 2, 4) #Agregamos el 2 y 4 al vector otra
+cor(data, otra) #Coeficiente de correlación entre los dos vectores
+
+#Para crear una matríz, se ocupa la rutina matrix. Toma como argumentos
+#los elementos por acomodar por columnas (la opción byrow=TRUE cambia el orden
+#de llenado) y las dimensiones. Por ejemplo, M <- matrix(rep(0, 9), nrow=3, ncol=3)
+#produce una matriz tres por tres con puros ceros:
+
+M <- matrix(rep(0, 9), nrow=3, ncol=3)
+M
+
+#Para comparaciones entre vectores, las subrutinas all y any sirven para
+#determinar si todos o algunos de los elementos son iguales:
+
+a <- c(1, 2, 3)
+b <- c(1, 2, 4)
+a == b
+all(a == b) #Todos son iguales
+any(a == b) #Alguno es igual
+
+#La aritmética funciona en grandes rasgos como uno esperaría, con el
+#detalle que las operaciones vectoriales y matriciales de álgebra lineal
+#contienen símbolos de porcentaje mientras los que operan por elementos tienen
+#la notación estándar:
+
+a <- 3
+b <- 4
+c <- c(5, 6, 7)
+d <- c(8, 10, 12)
+a + b
+a - b
+a * b
+a / b
+a^b
+b^a
+a**b
+a + c
+c + d
+c * d
+c %*% d
+e <- matrix(c(1, 2, 3, 4), nrow=2)
+e
+f <- matrix(c(2, 4, 6, 8), nrow=2)
+f
+e + f
+e - f
+e * f
+e %*% f
+
+#El redondeo de enteros a decimales se hace con las tres reglas: hacia abajo
+#con la función piso floor, hacia arriba con la función techo ceiling y
+#al entero más cercano con round. La división entera se logra con %/% y
+#el residuo (también llamado modulo, que en R funciona hasta con valores decimales) con %%:
+
+d <- 7.3
+floor(d) #Piso
+ceiling(d) #Techo
+round(d) #Redondeo
+d / 2 
+d %/% 2 #Parte entera
+d %% 2 #Residuo
+
+
+
