@@ -105,9 +105,119 @@ d <- 7.3
 floor(d) #Piso
 ceiling(d) #Techo
 round(d) #Redondeo
-d / 2 
+print(d / 2 )
 d %/% 2 #Parte entera
 d %% 2 #Residuo
+
+
+
+x <- 123.4
+sqrt(x)
+exp(x)
+sin(x)
+cos(x)
+tan(x)
+tanh(2.5)
+log(x)
+log(x, 10)
+log(x, 2)
+
+
+factorial(5)
+choose(9, 3)
+factorial(9) / (factorial(6) * factorial(3))
+
+
+s <- seq(4, 100, 2)
+s
+r <- rep(13, 20)
+r
+i <- 2:12
+i
+c <- cut(s, breaks=4)
+table(c)
+tail(s)
+tail(s, 10)
+head(s)
+head(s, 8)
+
+
+x <- 3
+y <- NULL
+if (x > 5) { y <- x * 3 } else { y <- 6 - x }
+y
+z <- NULL
+if (x %% 2 == 1 & y %% 2 == 1) { z <- 2 } else { z <- 3 }
+z
+if (z != 1) { print("no es uno") }
+if (x == 2 | y == 2 | z == 2) { print("hay un dos") } else { print("no hay un dos") }
+for (i in 1:5) { print(2**i) }
+while (x > 0) { print("quito uno"); x <- x - 1 }
+x
+
+
+potdos <- function(x) 2**x
+potdos(3)
+
+eucl <- function(x1, y1, x2, y2){
+  dx <- x1 - x2; dy <- y1 - y2
+  return(sqrt(dx^2 + dy^2))
+}
+eucl(1, 2, 3, 4)
+
+
+
+runif(1)
+runif(5)
+runif(2, 4, 10)
+runif(1) < 0.5
+runif(1) < 0.5
+runif(1) < 0.5
+runif(5) < 0.5
+sample(1:10, 3)
+sample(1:10, 3)
+sample(1:10)
+sample(c(2, 4, 6), 10, prob=c(0.1, 0.2, 0.7), replace=TRUE)
+
+
+rnorm(10) # media cero, desv. est. 1
+rnorm(10, mean=5, sd=1.3)
+rexp(2)
+rexp(2, rate=3)
+
+
+x <- 1:20
+y <- sin(x)
+plot(x, y)
+plot(x, y, type="l")
+lines(x, cos(x), col="red")
+abline(h=0, lwd=5, col="green")
+plot(x, y)
+points(x + 1, cos(x + 1), pch=15, col="blue")
+plot(x, y, main="Texto arriba", xlab="Etiqueta", ylab="Otra etiqueta")
+
+
+
+png(filename="salida.png")
+plot(x, y, pch=16)
+graphics.off()
+
+
+d1 <- c(10, 32, 34, 24, 49, 42, 89)
+d2 <- c(30, 23, 45, 24, 75, 34, 12, 56, 33)
+boxplot(d1)
+boxplot(d2)
+boxplot(d1, d2)
+
+
+
+datos <- c(1.6, 4.6, 2.6, 3.6, 5.6, 6.6, 3.5, 2.2, 4.4, 5.2, 5.4, 7.6, 5.8, 4.4, 6.4)
+hist(datos)
+hist(datos, breaks=2)
+histograma <- hist(datos)
+histograma
+
+
 
 
 
