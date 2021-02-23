@@ -34,6 +34,9 @@ sapply(PimaIndiansDiabetes, class)
 y <- PimaIndiansDiabetes$diabetes
 cbind(freq=table(y), percentage=prop.table(table(y))*100)
 
+y <- iris$Species
+cbind(freq=table(y), percentage=prop.table(table(y))*100)
+
 # summarize the dataset
 summary(PimaIndiansDiabetes)
 
