@@ -24,7 +24,7 @@ head(BostonHousing)
 ## Understand Your Data Using Descriptive Statistics
 
 # Pima Indians Diabetes Database
-data(PimaIndiansDiabetes)
+data(PimaIndiansDiabetes2)
 head(PimaIndiansDiabetes, n = 20)
 
 # list types for each attribute
@@ -39,6 +39,7 @@ cbind(freq=table(y), percentage=prop.table(table(y))*100)
 
 # summarize the dataset
 summary(PimaIndiansDiabetes)
+summary(iris)
 
 # calculate standard deviation for all attributes
 sapply(PimaIndiansDiabetes[,1:8], sd)
@@ -51,6 +52,7 @@ print(skew)
 
 # calculate a correlation matrix for numeric variables
 correlations <- cor(PimaIndiansDiabetes[,1:8])
+correlations <- cor(iris[,1:4])
 # display the correlation matrix
 print(correlations)
 
