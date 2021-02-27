@@ -20,6 +20,7 @@ par(mfrow = c(1,1)) # Para ya no graficar 3 graficas en una figura.
 y <- Glass$Type
 frecuencias <- cbind(freq=table(y), percentage=prop.table(table(y))*100)
 barplot(frecuencias[,2], width = 1, xlab = "Tipo de vidrio", ylab = "Porcentaje (%)", ylim = c(0, 50))
+barplot(frecuencias[,1], width = 1, xlab = "Tipo de vidrio", ylab = "Frecuencia Absoluta", ylim = c(0, 100))
 
 # load package
 library(corrplot)
