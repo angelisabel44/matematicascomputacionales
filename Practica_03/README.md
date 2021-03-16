@@ -6,4 +6,4 @@ El método de bisección es uno de los métodos mas usuales. Existen otros méto
 
 # Referencia
 
-- Revista digital "Matemática, Educación e Internet". https://tecdigital.tec.ac.cr/revistamatematica/
+- Mora F. Walter, Introducción a los Métodos Numéricos. Implementaciones en R. (2015) https://tecdigital.tec.ac.cr/revistamatematica/
