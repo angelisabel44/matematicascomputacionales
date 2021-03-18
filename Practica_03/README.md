@@ -6,9 +6,9 @@ El método de bisección es uno de los métodos mas usuales. Existen otros méto
 
 # Tarea
 
-1. Resuelva _x<sub>3</sub> = 0_ usando bisección con el intervalo _[−0.2, 0.1]_.
-2. Resuelva f = x<sub>5</sub>−100∗x<sub>4</sub>+3995∗x3−79700∗x2+794004∗x−3160075 usando x0 =17. Resuelva usando bisección con [17, 22.2]
-3. Resuelva x3−2x−5=0. Estaecuacióntienevalorhistórico:fuelaecuaciónqueusóJohnWallispara presentar por primera vez el método de Newton a la academia francesa de ciencias en el siglo XV.
+1. Resuelva _x<sup>3</sup> = 0_ usando bisección con el intervalo _[−0.2, 0.1]_.
+2. Resuelva f = x<sup>5</sup>−100∗x<sup>4</sup>+3995∗x<sup>3</sup>−79700∗x<sup>2</sup>+794004∗x−3160075 usando bisección con [17, 22.2]
+3. Resuelva x<sup>3</sup>−2x−5=0.
 
 # Referencia
 
